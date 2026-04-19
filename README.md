@@ -83,6 +83,12 @@ npm run compile
  | **Aryan Bhati** |  
 
 ---
+
+## ⚠️ Requirements
+
+- Visual Studio Code **v1.116.0 or higher**
+
+---
 ## 📄 License
 
    MIT
