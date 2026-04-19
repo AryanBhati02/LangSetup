@@ -1,0 +1,12 @@
+.vscode/**
+.vscode-test/**
+src/**
+.gitignore
+.vscodeignore
+vsc-extension-quickstart.md
+**/tsconfig.json
+**/*.map
+**/*.ts
+debug.html
+debug_script.js
+debug_script2.js

@@ -1,4 +1,23 @@
+# Dependencies
 node_modules/
-out/
-*.vsix
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Mac
 .DS_Store
+
+# Compiled output
+out/
+dist/
+*.js.map
+
+# VS Code extension specific
+*.vsix
+.vscode-test/
+
+# Leftover debug test files
+debug.html
+debug_script.js
+debug_script2.js

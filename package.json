@@ -1,15 +1,23 @@
 {
   "name": "langsetup",
   "displayName": "LangSetup",
-  "description": "One-click compiler, runtime & extension installer for any programming language. No more browser searches or tutorials.",
+  "description": "One-click compiler, runtime & extension installer for any programming language.",
   "version": "1.0.0",
   "publisher": "your-publisher-name",
   "engines": {
     "vscode": "^1.85.0"
   },
-  "categories": ["Other"],
-  "keywords": ["setup", "install", "compiler", "language", "beginner", "java", "python", "c++"],
-  "activationEvents": ["onView:langsetup.sidebarView"],
+  "categories": [
+    "Other"
+  ],
+  "keywords": [
+    "setup",
+    "install",
+    "compiler",
+    "language",
+    "beginner"
+  ],
+  "activationEvents": [],
   "main": "./out/extension.js",
   "contributes": {
     "viewsContainers": {
@@ -34,18 +42,22 @@
       {
         "command": "langsetup.open",
         "title": "LangSetup: Open Language Installer"
+      },
+      {
+        "command": "langsetup.clearHistory",
+        "title": "LangSetup: Clear Install History"
       }
     ]
   },
   "scripts": {
     "vscode:prepublish": "npm run compile",
     "compile": "tsc -p ./",
-    "watch": "tsc -watch -p ./",
-    "lint": "eslint src"
+    "watch": "tsc -watch -p ./"
   },
   "devDependencies": {
-    "@types/node": "^20.0.0",
-    "@types/vscode": "^1.85.0",
-    "typescript": "^5.3.0"
+    "@types/node": "^20.19.39",
+    "@types/vscode": "^1.116.0",
+    "strip-comments": "^2.0.1",
+    "typescript": "^5.9.3"
   }
 }
