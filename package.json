@@ -1,0 +1,51 @@
+{
+  "name": "langsetup",
+  "displayName": "LangSetup",
+  "description": "One-click compiler, runtime & extension installer for any programming language. No more browser searches or tutorials.",
+  "version": "1.0.0",
+  "publisher": "your-publisher-name",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": ["Other"],
+  "keywords": ["setup", "install", "compiler", "language", "beginner", "java", "python", "c++"],
+  "activationEvents": ["onView:langsetup.sidebarView"],
+  "main": "./out/extension.js",
+  "contributes": {
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "langsetup-sidebar",
+          "title": "LangSetup",
+          "icon": "media/icon-activity.svg"
+        }
+      ]
+    },
+    "views": {
+      "langsetup-sidebar": [
+        {
+          "type": "webview",
+          "id": "langsetup.sidebarView",
+          "name": "Language Installer"
+        }
+      ]
+    },
+    "commands": [
+      {
+        "command": "langsetup.open",
+        "title": "LangSetup: Open Language Installer"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "lint": "eslint src"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/vscode": "^1.85.0",
+    "typescript": "^5.3.0"
+  }
+}
